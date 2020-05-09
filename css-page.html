@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WTF - Łukasz Klekner</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="index.html">Homepage</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="html-page.html">HTML</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="css-page.html">CSS</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="js-page.html">JS</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <header class="header">
+        <h1 class="header__title">CSS</h1>
+        <img class="header__logo" src="css3-logo.png" alt="CSS3 logo" />
+      </header>
+
+      <section class="section">
+        <h2 class="section__title">Czego dowiesz się o CSS3...</h2>
+
+        <article class="article">
+          <header class="article__header">
+            <h3 class="article__title">Lekcja 1: Co to jest CSS?</h3>
+            <p class="article__subtitle">
+              Pierwsze selektory i stylowanie strony
+            </p>
+          </header>
+
+          <p class="article__description">CSS = Cascading Style Sheets:</p>
+          <ul class="article__list">
+            <li class="article__item">odpowiada za prezentację</li>
+            <li class="article__item">
+              wpływa na wygląd elementów HTML na ekranie, wydrukach, itp.
+            </li>
+            <li class="article__item">składnia CSS to reguły</li>
+          </ul>
+          <p class="article__description">
+            Budowa reguły: <br />
+            selektor { <br />
+            właściwość: wartość; <br />
+            }
+          </p>
+          <p class="article__description">Jak dołączyć plik css?</p>
+          <ol class="article__list">
+            <li class="article__item">Znacznik style wewnątrz head'a</li>
+            <li class="article__item">
+              Podlinkowanie pliku stylów do html <br />
+              <code
+                >&lt;link href="" rel="stylesheet" type="text/css" &gt;</code
+              >
+            </li>
+            <li class="article__item">
+              Inline style - o tym więcej w
+              <a class="article__link" href="#inline-style">lekcji nr 2</a>
+            </li>
+          </ol>
+        </article>
+
+        <article class="article">
+          <h3 class="article__title">
+            Lekcja 2: Klasy, identyfikatory i specyficzność
+          </h3>
+
+          <p class="article__description" id="inline-style">
+            Style CSS można też dołączać w znacznikach HTML - choć jest to zła
+            praktyka. <br />
+            &lt;zniacznik style="color:yellow;"&gt;treść&lt;/znacznik&gt;
+          </p>
+
+          <p class="article__description">Selektory wyboru:</p>
+          <ul class="article__list">
+            <li class="article__item">klasy - .nazwa-klasy</li>
+            <li class="article__item">identyfikatora - #nazwa-id</li>
+          </ul>
+          <p class="article__description">
+            !important nadpisuje każdy styl, np: color:blue !important;
+          </p>
+          <p class="article__description">
+            Specyficzność w CSS - klasyfikacja medalowa
+          </p>
+          <img
+            class="article_image"
+            src="specyficznosc-css.png"
+            alt="Zdjęcię uporządkowanej specyficzności w CSS"
+          />
+          <p class="article__description">Oto kilka przykładów:</p>
+          <img
+            class="article_image"
+            src="example-1.png"
+            alt="Specyficzność - przykład nr 1"
+          />
+          <img
+            class="article_image"
+            src="example-2.png"
+            alt="Specyficzność - przykład nr 2"
+          />
+
+          <p class="article__description">
+            Rekomendowane jest dodawanie klas do wszystkich elementów i unikanie
+            zagnieżdżeń.
+          </p>
+          <p class="article__description">Nazewnictwo klas:</p>
+          <ul class="article__list">
+            <li class="article__item">
+              używaj pojedynczych słów z j.angielskiego
+            </li>
+            <li class="article__item">
+              nazywaj rzeczy zgodnie z ich funkcją na stronie
+            </li>
+            <li class="article__item">startuj z małej litery</li>
+            <li class="article__item">nie zaczynaj od cyfr</li>
+            <li class="article__item">
+              jeśli musisz użyć dwóch słów użyj tzw. kebab-case
+            </li>
+            <li class="article__item">
+              staraj się, żeby element miał jedną klasę (nie zwiększaj
+              sepcyficzności bez potrzeby)
+            </li>
+          </ul>
+
+          <p class="article__description">Podsumowanie:</p>
+          <ul class="article__list">
+            <li class="article__item">html class="name" = css .name</li>
+            <li class="article__item">html id="name" = css #name</li>
+            <li class="article__item">
+              stylujemy po klasach (bez zagnieżdżeń)
+            </li>
+            <li class="article__item">
+              nazwy klas po angielsku zgodnie z przeznaczeniem
+            </li>
+            <li class="article__item">
+              tworzymy klasy nawet jeśli mamy jeden element danego typu
+            </li>
+            <li class="article__item">specyficzność może dać popalić</li>
+            <li class="article__item">
+              nie używamy !important i stylów inline'owych
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Strona domowa Łukasza Klekner - uczesnitka 2-ej edycji szkolenia WTF: Co
+      ten frontend.
+    </footer>
+  </body>
+</html>
