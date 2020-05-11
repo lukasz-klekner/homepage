@@ -1,3 +1,8 @@
+.wrapper{
+  width: 800px;
+  margin: 0 auto;
+}
+
 .nav__list {
   list-style: none;
   display: flex;
