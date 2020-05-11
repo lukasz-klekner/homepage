@@ -10,12 +10,20 @@
   <body>
     <nav class="navigation">
       <ul class="navigation__list">
-          <li class="navigation__item"><a class="navigation__link" href="index.html">Homepage</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="html-page.html">HTML</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="css-page.html">CSS</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="js-page.html">JS</a></li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Homepage</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="html-page.html">HTML</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="css-page.html">CSS</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="js-page.html">JS</a>
+        </li>
       </ul>
-  </nav>
+    </nav>
 
     <main class="main">
       <header class="header">
@@ -119,6 +127,47 @@
               za pomocą JS można robić szalone rzeczy
             </li>
           </ul>
+        </article>
+
+        <article class="article">
+          <h3 class="article__title">Typy danych i immutability</h3>
+          <p class="article__description">
+            Zmienna to połączenie z JSowym światem wartości
+          </p>
+
+          <p class="article__description">Zmienne</p>
+          <ul class="article__list">
+            <li class="article__item">
+              const - ma stałe połączenie, którego nie możemy zmienić
+            </li>
+            <li class="article__item">
+              let - definujemy tylko raz, ale możemy "przepinać" połączenie
+            </li>
+            <li class="article__item">var - nie rekomendowana</li>
+          </ul>
+
+          <p class="article__description">
+            Zmienne w JS są jak młody pelikan: łykną wszystko.
+          </p>
+
+          <p class="article__description">Typy proste w JS (primitives)</p>
+          <ul class="article__list">
+            <li class="article__item">String</li>
+            <li class="article__item">Number</li>
+            <li class="article__item">Biging (bardzo duża liczba)</li>
+            <li class="article__item">Boolean (true, false)</li>
+            <li class="article__item">Null (wartość celowo niezdefiniowana)</li>
+            <li class="article__item">Undefined (brak definicji)</li>
+            <li class="article__item">Symbol (tworzy "unikalne opakowanie")</li>
+          </ul>
+
+          <p class="article__description">
+            typeof nazwa_zmiennej - zwraca typ zmiennej
+          </p>
+          <p class="article__description">
+            Immutability(niezmienność)- nie możemy zmienić wartości primitiv
+            values w JS. To co zmieniamy to tylko i wyłącznie połączenie.
+          </p>
         </article>
       </section>
     </main>
