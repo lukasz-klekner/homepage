@@ -10,12 +10,20 @@
   <body>
     <nav class="navigation">
       <ul class="navigation__list">
-          <li class="navigation__item"><a class="navigation__link" href="index.html">Homepage</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="html-page.html">HTML</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="css-page.html">CSS</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="js-page.html">JS</a></li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Homepage</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="html-page.html">HTML</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="css-page.html">CSS</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="js-page.html">JS</a>
+        </li>
       </ul>
-  </nav>
+    </nav>
 
     <main class="main">
       <header class="header">
@@ -145,6 +153,48 @@
             </li>
           </ul>
         </article>
+
+        <article class="article">
+          <header>
+            <h3>Lekcja 3: Box Model</h3>
+            <p>Życie w pudełku</p>
+          </header>
+          <p> <code> &lt; div &gt; </code>  używamy tylko i wyłącznie, gdy chcemy coś "opakować" tzn. nie istnieje odpowiedni 
+            semantyczny znacznik</p>
+            <p>Właściwość display:</p>
+            <ul>
+              <li><code>display: block;</code> - elementy ustawiają się pod sobą, możemy określić wymiary boxa</li>
+              <li><code>display: inline;</code> - elementy ustawiają się obok siebie, zajmują tyle miejsca co ich treść, nie możemy
+              ustawić wymiarów boxa</li>
+              <li><code>display: inline-block;</code> - elementy ustawiają się obok siebie, ale tym razem możemy nadać wymiary boxowi</li>
+              <li><code>display: auto</code> - jeśli treść nie mieści się w boxie, to automatycznie jest dodawany scroller</li>
+            </ul>
+            <p>Do ustawiania wymiarów boxa można korzystać z bardzo użytecznyxch właściwości: <code>min-width</code> & 
+              <code>max-width</code>.</p>
+            <p><code>overflow: hidden;</code> - pozwala na ukrywanie treści, która nie mieści się w boxie</p>
+            <p>Box model:</p>
+            <ul>
+              <li>margin</li>
+              <li>border</li>
+              <li>padding</li>
+              <li>content</li>
+            </ul>
+            <p><code>border-radius: __px;</code> - zaokrągla rogi ramki</p>
+            <p><code>margin: __px auto;</code> - wyśrodkowuje box, ale pod warunkiem, że element ma już ustaloną szerokość</p>
+            <p><code>box-sizing: content-box;</code> - domyślnie, nie uwzględnia paddingu i marginesów w szerokości i wysokości</p>
+            <p><code>box-sizing: border-box;</code> -  uwzględnia paddingu i marginesów w szerokości i wysokości</p>
+            <p>Pozycjonowanie:</p>
+            <ul>
+              <li><code>position: static;</code> - domyślnie</li>
+              <li><code>position: relative;</code> - pozycjonowanie względem wybranego elementu</li>
+              <li><code>position: absolute;</code> - pozycjonowanie wzgledem okna przeglądarki, nie ma szerokości tak jak inline</li>
+              <li><code>position: fixed;</code> - działa podobnie do absolute, tylko jest przyklejony do strony</li>
+              <li><code>position: sticky; - jest przyklejony, ale tylko w obrębie danego elementu</code></li>
+            </ul>
+            <p>Float - nie służy do budowania layotów, tylko do opływania elementów, gdy nie ma wysokości to sprawia straszne problemy,
+              gdyż nie widzi innych elementów
+            </p>
+            <p><code>clear: both;</code> - służy do czyszczenia floata</p>
       </section>
     </main>
 
