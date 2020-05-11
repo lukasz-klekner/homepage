@@ -130,7 +130,7 @@
         </article>
 
         <article class="article">
-          <h3 class="article__title">Typy danych i immutability</h3>
+          <h3 class="article__title">Lekcja 2: Typy danych i immutability</h3>
           <p class="article__description">
             Zmienna to połączenie z JSowym światem wartości
           </p>
@@ -168,6 +168,39 @@
             Immutability(niezmienność)- nie możemy zmienić wartości primitiv
             values w JS. To co zmieniamy to tylko i wyłącznie połączenie.
           </p>
+        </article>
+
+        <article class="article">
+          <h3 class="article__title">Lekcja 3: DOMowe przedszkole</h3>
+          <p class="article__description">
+            DOM - Document Object Model - struktura html w devtools
+          </p>
+          <p class="article__description">
+            <code>document.querySelektor('.class--js');</code> - zwraca
+            element(y) ze struktury DOM
+          </p>
+          <p class="article__description">
+            <code>nazwaZmiennejQuerySelektor.innerHTML='treść'</code> - edycja
+            treści wybranego elementu
+          </p>
+          <p class="article__description">
+            <code>console.log(nazwaZmiennejQuerySelektor.innerHTML)</code> -
+            wyświetla treść wybranego elementu
+          </p>
+
+          <p class="article__description">Podsumowanie:</p>
+          <ul class="article__list">
+            <li class="article__item">DOM to "złożony" w przeglądarce HTML</li>
+            <li class="article__item">JS może modyfikować DOM</li>
+            <li class="article__item">
+              funkcja querySelektor zwraca node(węzeł) z HTML-a, selektor jest
+              zapisywany zgodnie z CSS
+            </li>
+            <li class="article__item">
+              korzystając z BEM tworzymy dodatkową klasę z modyfikatorem --js
+              (ułatwia identyfikację/usuwa potencjalne problemy)
+            </li>
+          </ul>
         </article>
       </section>
     </main>
