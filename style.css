@@ -3,25 +3,37 @@
   margin: 0 auto;
 }
 
-.nav__list {
+.navigation{
+  background-color: rgb(3, 3, 133);
+}
+
+.navigation__list {
+  margin: 0;
   list-style: none;
   display: flex;
+  justify-content: space-evenly;
 }
 
-.nav__item {
-  margin-left: 30px;
-}
-
-.nav__link {
+.navigation__link {
   display: block;
+  padding: 10px;
   text-decoration: none;
   font-size: 20px;
-  color: rgb(88, 86, 86);
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.navigation__link:hover{
+  background-color: #fff;
+  color: rgb(3, 3, 133);
 }
 
 .header__title {
   color: rgb(8, 8, 99);
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .section__title {
