@@ -36,6 +36,11 @@
   font-size: 30px;
 }
 
+.header__logo{
+  display: block;
+  max-width: 100%;
+}
+
 .section__title {
   color: rgb(89, 89, 201);
   font-size: 20px;
@@ -82,4 +87,34 @@
 
 .article--bold {
   color: rgb(25, 25, 128);
+}
+
+@media (min-width: 768px){
+  .navigation{
+    background-color: rgb(3, 3, 133);
+  }
+  
+  .navigation__list {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .navigation__link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .navigation__link:hover{
+    background-color: #fff;
+    color: rgb(3, 3, 133);
+  }
 }
