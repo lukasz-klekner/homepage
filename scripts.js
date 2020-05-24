@@ -16,3 +16,11 @@ const greet2 = (name, age) => console.log(`Mam na imiÄ™ ${name}. W tym roku skoÅ
 
 greet(name, age);
 greet2(name, age);
+
+
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.navigation');
+
+hamburger.addEventListener('click', ()=>{
+    nav.classList.toggle('navigation--open');
+})
