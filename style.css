@@ -115,8 +115,16 @@
   color: #191980;
   font-weight: 700; }
 
+.article__image {
+  max-width: 300px; }
+
 .article--italic {
   color: #191980; }
 
 .article--bold {
   color: #191980; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px 100px; }
